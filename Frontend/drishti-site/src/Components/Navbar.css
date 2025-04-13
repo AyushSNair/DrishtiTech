@@ -1,40 +1,41 @@
 /* Navbar.css */
 .custom-navbar {
-    background-color: #012020;
-    border: 1px solid #444;
-    padding: 0.6rem 1rem;
-  }
-  
-  .navbar-brand {
-    font-weight: bold;
-    color: #ffffff !important;
-  }
-  
-  .nav-link-custom {
-    color: #cccccc !important;
-    margin: 0 0.7rem;
-    font-weight: 500;
-    transition: 0.3s;
-  }
-  
-  .nav-link-custom:hover,
-  .nav-link-custom:focus {
-    color: #ffffff !important;
-    text-decoration: underline;
-  }
-  
-  .search-form {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-box {
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  .logo-img {
-    height: 30px;
-    width: 30px;
-    margin-right: 8px;
-  }
-  
+  background-color: #012020;
+  border: 1px solid #444;
+  padding: 0.6rem 1rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #ffffff !important;
+}
+
+.nav-link-custom {
+  color: #cccccc !important;
+  margin: 0 0.7rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom:focus {
+  color: #39FF14 !important; /* Neon green */
+  text-decoration: underline;
+  text-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 20px #39FF14;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.logo-img {
+  height: 30px;
+  width: 30px;
+  margin-right: 8px;
+}

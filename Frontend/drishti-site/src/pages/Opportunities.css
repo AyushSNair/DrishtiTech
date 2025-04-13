@@ -58,7 +58,6 @@
     cursor: pointer;
   }
   .apply-btn:hover{
-    background-color: #00800b;
-    color: #ffffff;
+    background-color: #8ce124;
     border-color: #000000;
   }

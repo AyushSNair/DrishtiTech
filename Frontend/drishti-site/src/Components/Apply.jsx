@@ -6,10 +6,30 @@ const Apply = () => {
   const [email, setEmail] = useState('');
   const [resume, setResume] = useState(null);
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic (e.g., send data to server or email)
-    alert('Form submitted!');
+    
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('email', email);
+    formData.append('resume', resume);
+
+    try {
+      const response = await fetch('http://localhost:5000/api/apply', {
+        method: 'POST',
+        body: formData,
+      });
+      
+      const result = await response.json();
+      if (response.status === 201) {
+        alert('Application submitted successfully!');
+      } else {
+        alert('Error submitting application: ' + result.error);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Something went wrong.');
+    }
   };
 
   return (
