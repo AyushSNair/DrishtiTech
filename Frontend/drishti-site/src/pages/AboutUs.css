@@ -1,0 +1,156 @@
+.about-page {
+    background-color: #003a3a; /* Darker teal for better contrast */
+    padding: 60px 0;
+    color: #f4f4f4;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2.5rem; /* Larger font size for the page title */
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #a0f000; /* Neon green */
+    text-transform: uppercase;
+}
+
+.about-content {
+    margin-bottom: 40px;
+}
+
+.about-card {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background-color: #008060; /* Deep green for a more polished look */
+    color: #f0f0f0;
+    box-shadow: 0 6px 20px rgba(160, 240, 0, 0.2);
+    height: 450px; /* Increased card height for more content */
+    width: 100%; /* Full width in the column */
+    max-width: 400px; /* Increased width for larger cards */
+    margin: 0 auto; /* Center-align the card */
+    padding: 30px; /* Added padding for extra space */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(160, 240, 0, 0.3);
+}
+
+.about-card .card-title {
+    color: #a0f000;
+    font-size: 1.8rem; /* Larger font size for titles */
+    margin-bottom: 1.5rem; /* Added spacing between title and text */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-card .card-text {
+    font-size: 1rem; /* Larger font size for card text */
+    line-height: 1.8;
+}
+
+.team-member {
+    margin-bottom: 30px;
+}
+
+.team-card {
+    background-color: #008060;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(160, 240, 0, 0.2);
+    height: 450px; /* Increased height for the team cards */
+    width: 100%;
+    max-width: 400px; /* Consistent width with other cards */
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(160, 240, 0, 0.3);
+}
+
+.team-card .card-title {
+    font-size: 1.8rem; /* Larger font size for team member titles */
+    color: #a0f000;
+    text-transform: uppercase;
+}
+
+.team-card .card-text {
+    font-size: 1.2rem; /* Larger font size for team member descriptions */
+    color: #cccccc;
+}
+
+.team-card img {
+    height: 220px; /* Increased image height for team members */
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.social-icons .icon {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons .icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.cta {
+    margin-top: 60px;
+}
+
+.cta h2 {
+    color: #a0f000;
+    margin-bottom: 30px;
+    font-size: 2.2rem; /* Increased size for call-to-action header */
+}
+
+.cta button {
+    background-color: #a0f000;
+    border: none;
+    padding: 14px 35px;
+    font-size: 1.3rem; /* Larger font size for button text */
+    color: #003a3a;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: #baff33;
+    color: #003a3a;
+    transform: scale(1.05);
+}
+
+.butsOfAbt {
+    height: 55px;
+    width: 200px;
+    background-color: #baff33;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem; /* Larger font size for the button */
+    transition: background-color 0.3s ease;
+}
+
+.butsOfAbt:hover {
+    background-color: #99cc29;
+}
