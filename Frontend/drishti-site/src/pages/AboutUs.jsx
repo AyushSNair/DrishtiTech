@@ -1,16 +1,16 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import './AboutUs.css';
-import gmailIcon from '../assets/gmail.png';
-import linkedinIcon from '../assets/linkedin.png';
+import '@fortawesome/fontawesome-free/css/all.min.css'; // Font Awesome
+import per1 from '../assets/person1.jpeg';
 
 const About = () => {
   return (
     <div className="about-page">
       <Container className="about-container">
-        <h1 className="page-title">About Us</h1>
+        <h2>About Us</h2>
 
-        {/* Mission, Vision, and History in Cards - Same Row */}
+        {/* Mission, Vision, and History Cards */}
         <div className="about-content">
           <Row>
             <Col md={4}>
@@ -20,7 +20,7 @@ const About = () => {
                   <Card.Text>
                     At Drishti Technologies, our mission is to leverage innovative technology to create
                     accessible and scalable solutions that empower individuals and organizations to realize
-                    their potential. We are dedicated to transforming ideas into impactful realities.
+                    their potential.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -55,64 +55,56 @@ const About = () => {
         <section className="team">
           <h2>Meet the Team</h2>
           <Row>
-            <Col md={4} className="team-member">
-              <Card className="team-card">
-                <Card.Img variant="top" src="path_to_team_member_image.jpg" />
-                <Card.Body>
-                  <Card.Title>John Doe</Card.Title>
-                  <div className="social-icons">
-                    <a href="mailto:john.doe@example.com" target="_blank" rel="noopener noreferrer">
-                      <img src={gmailIcon} alt="Gmail" className="icon" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer">
-                      <img src={linkedinIcon} alt="LinkedIn" className="icon" />
-                    </a>
-                  </div>
-                  <button className='butsOfAbt'>Connect</button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="team-member">
-              <Card className="team-card">
-                <Card.Img variant="top" src="path_to_team_member_image.jpg" />
-                <Card.Body>
-                  <Card.Title>John Doe</Card.Title>
-                  <div className="social-icons">
-                    <a href="mailto:john.doe@example.com" target="_blank" rel="noopener noreferrer">
-                      <img src={gmailIcon} alt="Gmail" className="icon" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer">
-                      <img src={linkedinIcon} alt="LinkedIn" className="icon" />
-                    </a>
-                  </div>
-                  <button className='butsOfAbt'>Connect</button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="team-member">
-              <Card className="team-card">
-                <Card.Img variant="top" src="path_to_team_member_image.jpg" />
-                <Card.Body>
-                  <Card.Title>John Doe</Card.Title>
-                  <div className="social-icons">
-                    <a href="mailto:john.doe@example.com" target="_blank" rel="noopener noreferrer">
-                      <img src={gmailIcon} alt="Gmail" className="icon" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer">
-                      <img src={linkedinIcon} alt="LinkedIn" className="icon" />
-                    </a>
-                  </div>
-                  <button className='butsOfAbt'>Connect</button>
-                </Card.Body>
-              </Card>
-            </Col>
+            {[{
+              name: "Ved",
+              role: "Founder and CEO",
+              img: per1,
+              email: "alex.smith@example.com",
+              linkedin: "https://www.linkedin.com/in/alexsmith"
+            }, {
+              name: "May Brown",
+              role: "Sales Manager",
+              img: per1,
+              email: "may.brown@example.com",
+              linkedin: "https://www.linkedin.com/in/maybrown"
+            }, {
+              name: "Ann Richmond",
+              role: "Web Developer",
+              img: per1,
+              email: "ann.richmond@example.com",
+              linkedin: "https://www.linkedin.com/in/annrichmond"
+            }].map((member, idx) => (
+              <Col md={4} className="team-member" key={idx}>
+  <Card className="team-card">
+    <div className="team-image-container">
+      <Card.Img variant="top" src={member.img} />
+    </div>
+    <Card.Body className="team-card-body">
+      <Card.Title>{member.name}</Card.Title>
+      <Card.Text className="role">{member.role}</Card.Text>
+      <div className="social-icons">
+        <a href={`mailto:${member.email}`} target="_blank" rel="noopener noreferrer">
+          <i className="fa-regular fa-envelope icon"></i>
+        </a>
+        <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+          <i className="fa-brands fa-linkedin icon"></i>
+        </a>
+      </div>
+      <button className="butsOfAbt">Connect</button>
+    </Card.Body>
+  </Card>
+</Col>
+
+            ))}
           </Row>
         </section>
 
         {/* Call to Action Section */}
         <section className="cta">
           <h2>Want to work with us?</h2>
-          <button className='butsOfAbt' href="/contact">Contact Us</button>
+          <a href="/contact">
+            <button className="cont">Contact Us</button>
+          </a>
         </section>
       </Container>
     </div>

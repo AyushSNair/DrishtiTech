@@ -1,40 +1,38 @@
 .about-page {
-    background-color: #003a3a; /* Darker teal for better contrast */
+    background-color: #003a3a;
     padding: 60px 0;
     color: #f4f4f4;
     font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #a0f000; /* Accent color for headers */
 }
 
 .about-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    text-align: center;
-}
-
-.page-title {
-    font-size: 2.5rem; /* Larger font size for the page title */
-    font-weight: bold;
-    margin-bottom: 40px;
-    color: #a0f000; /* Neon green */
-    text-transform: uppercase;
 }
 
 .about-content {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .about-card {
     margin-bottom: 20px;
     border-radius: 12px;
-    background-color: #008060; /* Deep green for a more polished look */
+    background-color: #008060;
     color: #f0f0f0;
     box-shadow: 0 6px 20px rgba(160, 240, 0, 0.2);
-    height: 450px; /* Increased card height for more content */
-    width: 100%; /* Full width in the column */
-    max-width: 400px; /* Increased width for larger cards */
-    margin: 0 auto; /* Center-align the card */
-    padding: 30px; /* Added padding for extra space */
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -45,19 +43,20 @@
 
 .about-card .card-title {
     color: #a0f000;
-    font-size: 1.8rem; /* Larger font size for titles */
-    margin-bottom: 1.5rem; /* Added spacing between title and text */
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .about-card .card-text {
-    font-size: 1rem; /* Larger font size for card text */
-    line-height: 1.8;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 .team-member {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .team-card {
@@ -66,11 +65,11 @@
     border: none;
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(160, 240, 0, 0.2);
-    height: 450px; /* Increased height for the team cards */
+    max-width: 350px;
     width: 100%;
-    max-width: 400px; /* Consistent width with other cards */
-    margin: 0 auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .team-card:hover {
@@ -79,33 +78,51 @@
 }
 
 .team-card .card-title {
-    font-size: 1.8rem; /* Larger font size for team member titles */
+    font-size: 1.8rem;
     color: #a0f000;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
-.team-card .card-text {
-    font-size: 1.2rem; /* Larger font size for team member descriptions */
+.team-card .role {
+    font-size: 1rem;
     color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.team-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .team-card img {
-    height: 220px; /* Increased image height for team members */
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
     object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    margin-top: 15px;
 }
 
 .social-icons {
-    display: flex;
+    display: flex
+;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
     margin: 10px 0;
+    height: 40px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .social-icons .icon {
-    width: 35px;
-    height: 35px;
+    font-size: 1.8rem; /* Larger icons */
+    color: white;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -122,35 +139,48 @@
 .cta h2 {
     color: #a0f000;
     margin-bottom: 30px;
-    font-size: 2.2rem; /* Increased size for call-to-action header */
+    font-size: 2.2rem;
 }
 
 .cta button {
     background-color: #a0f000;
     border: none;
     padding: 14px 35px;
-    font-size: 1.3rem; /* Larger font size for button text */
-    color: #003a3a;
-    border-radius: 12px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.3
 }
 
-.cta button:hover {
-    background-color: #baff33;
-    color: #003a3a;
-    transform: scale(1.05);
-}
 
 .butsOfAbt {
-    height: 55px;
-    width: 200px;
+    width: 100%;
     background-color: #baff33;
     border-radius: 10px;
     border: none;
-    font-size: 1.2rem; /* Larger font size for the button */
+    font-size: 1.1rem;
+    padding: 10px;
     transition: background-color 0.3s ease;
+    margin-top: 15px;
 }
 
 .butsOfAbt:hover {
     background-color: #99cc29;
+    cursor: pointer;
+}
+.cont{
+    background-color: #baff33;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+.cont::hover {
+    background-color: #8cb13b;
+    cursor: pointer;
+}
+.fa-brands fa-linkedin icon{
+    background-color: #000000;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
