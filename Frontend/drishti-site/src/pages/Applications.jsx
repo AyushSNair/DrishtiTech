@@ -13,7 +13,7 @@ const Applications = () => {
         // Get the token from localStorage (assuming it is stored after login)
         const token = localStorage.getItem('token');
         
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/apply/${endpoint}`, {
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/apply`, {
           headers: {
             Authorization: `Bearer ${token}` // Add token to headers for authentication
           }
