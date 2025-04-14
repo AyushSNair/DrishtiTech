@@ -29,7 +29,7 @@ const NavbarComponent = () => {
           {' '}
           Dristi
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Toggle aria-controls="navbar-nav" className='navi' />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="mx-auto">
             <Nav.Link as={Link} to="/" className="nav-link-custom">Home</Nav.Link>
