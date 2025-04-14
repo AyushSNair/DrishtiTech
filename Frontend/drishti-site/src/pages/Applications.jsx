@@ -60,7 +60,7 @@ const Applications = () => {
                 <td>{new Date(app.appliedAt).toLocaleString()}</td>
                 <td>
                   <a
-                    href={`http://localhost:5000/${app.resumePath}`}
+                    href={`${process.env.REACT_APP_API_URL}/${app.resumePath}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="resume-link"
@@ -80,3 +80,6 @@ const Applications = () => {
 };
 
 export default Applications;
+
+
+

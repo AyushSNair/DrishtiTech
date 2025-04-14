@@ -3,6 +3,7 @@
     padding: 20px;
     background-color: #002d2d;
     min-height: 100vh;
+    overflow-x: auto;
 }
 
 .applications-container h2 {
@@ -22,21 +23,29 @@
     text-align: center;
 }
 
+/* Responsive Table Wrapper */
+.applications-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 /* Table Styling */
 .applications-container table {
     width: 100%;
+    min-width: 600px;
     margin-top: 20px;
     border-collapse: collapse;
     background-color: #008060;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid #002d2d; /* Border around the table */
+    border: 1px solid #002d2d;
 }
 
-.applications-container th, .applications-container td {
+.applications-container th,
+.applications-container td {
     padding: 15px;
     text-align: left;
-    border: 1px solid #002d2d; /* Border around each cell */
+    border: 1px solid #002d2d;
 }
 
 .applications-container th {
@@ -85,4 +94,35 @@
 
 .applications-container .application-item strong {
     font-weight: bold;
+}
+
+/* Responsive Text Scaling */
+@media (max-width: 768px) {
+    .applications-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .applications-container p,
+    .applications-container td,
+    .applications-container th {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .applications-container h2 {
+        font-size: 1.3rem;
+    }
+
+    .applications-container p,
+    .applications-container td,
+    .applications-container th {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .applications-container .no-applications {
+        font-size: 1.2rem;
+    }
 }
