@@ -14,9 +14,9 @@ const Opportunities = () => {
         <p><strong>Type:</strong> Hardcore coding (Python)</p>
         <p><strong>Task:</strong> Use YOLO or similar object detection models on football clips to identify fouls, goals, handballs, etc.</p>
         <p><strong>Why it matters:</strong> High intellectual rigor, precision, and creativity. We don't aim to replace referees — we empower them.</p>
-        <Link to="/apply">
-          <button className="apply-btn">Apply</button>
-        </Link>
+        <Link to={`/apply?role=Machine Learning Engineer`}>
+  <button className="apply-btn">Apply</button>
+</Link>
       </div>
 
       <div className="opportunity">
@@ -24,9 +24,9 @@ const Opportunities = () => {
         <p><strong>Type:</strong> 95% Research / 5% Basic Python</p>
         <p><strong>Task:</strong> Scrape 50+ football match images + 20 handball scenario images from public web sources.</p>
         <p><strong>Why it matters:</strong> Data is the new fuel. What you scrape feeds our models and defines our accuracy.</p>
-        <Link to="/apply">
-          <button className="apply-btn">Apply</button>
-        </Link>
+        <Link to={`/apply?role=Data Scrapper`}>
+  <button className="apply-btn">Apply</button>
+</Link>
       </div>
 
       <div className="note">

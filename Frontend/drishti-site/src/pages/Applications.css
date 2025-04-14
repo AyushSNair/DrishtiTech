@@ -1,0 +1,88 @@
+/* General Styling for the Applications Page */
+.applications-container {
+    padding: 20px;
+    background-color: #002d2d;
+    min-height: 100vh;
+}
+
+.applications-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e5e3e3;
+}
+
+.labs {
+    color: #e5e3e3;
+}
+
+.applications-container p {
+    font-size: 1.2rem;
+    color: #fff8f8;
+    text-align: center;
+}
+
+/* Table Styling */
+.applications-container table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #008060;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #002d2d; /* Border around the table */
+}
+
+.applications-container th, .applications-container td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #002d2d; /* Border around each cell */
+}
+
+.applications-container th {
+    background-color: #008060;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.applications-container td {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.applications-container tr:nth-child(even) {
+    background-color: #008060;
+}
+
+.applications-container tr:hover {
+    background-color: #3f9f0b;
+    transition: background-color 0.3s ease;
+}
+
+/* Resume Link Styling */
+.applications-container .resume-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.applications-container .resume-link:hover {
+    text-decoration: underline;
+}
+
+/* No Applications Message */
+.applications-container .no-applications {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fdf1f1;
+    text-align: center;
+}
+
+/* Application Item Styling (for individual row data) */
+.applications-container .application-item {
+    font-size: 1rem;
+    color: #e5e3e3;
+}
+
+.applications-container .application-item strong {
+    font-weight: bold;
+}

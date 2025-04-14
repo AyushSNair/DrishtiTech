@@ -51,16 +51,17 @@
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
+    text-decoration: none
   }
   .cta-button {
     background-color: #6d8673; /* Green */
     color: #fff;
     border: none;
-    padding: 12px 25px;
-    font-size: 1rem;
-    border-radius: 30px;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+    padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
   }
   
   .cta-button:hover {
@@ -68,7 +69,8 @@
     transform: translateY(-3px);
     box-shadow: 0 12px 24px rgba(40, 167, 69, 0.35);
   }
-  
+
+
   
   /* Animations */
   @keyframes fadeInDown {
