@@ -2,10 +2,12 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const path = require('path'); // Add this line
+const path = require('path');
 const applicationRoutes = require('./routes/applicationRoutes');
 const contactRoutes = require('./routes/contactRoutes');
-const authRoutes = require('./routes/auth.js');
+const authRoutes = require('./routes/auth');
+
+require('dotenv').config(); // Add this to read from .env
 
 const app = express();
 
@@ -22,12 +24,18 @@ app.use('/api/auth', authRoutes);
 // Static file serving for uploaded files
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-// Connect to MongoDB (replace with your MongoDB URI)
-mongoose.connect('mongodb://localhost:27017/jobApplications', { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('MongoDB connected'))
-  .catch(err => console.log(err));
+// Home route to avoid "Cannot GET /"
+app.get('/', (req, res) => {
+  res.send('🎉 API is running! Welcome to the Job Application Backend.');
+});
 
-// Start the server
-app.listen(5000, () => {
-  console.log('Server running on http://localhost:5000');
+// Connect to MongoDB
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('✅ MongoDB connected'))
+  .catch(err => console.log('❌ MongoDB connection error:', err));
+
+// Start server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
