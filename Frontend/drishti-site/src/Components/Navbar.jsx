@@ -36,7 +36,7 @@ const NavbarComponent = () => {
             <Nav.Link as={Link} to="/about" className="nav-link-custom">About</Nav.Link>
             <Nav.Link as={Link} to="/products" className="nav-link-custom">Products</Nav.Link>
             <Nav.Link as={Link} to="/opportunities" className="nav-link-custom">Opportunities</Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="nav-link-custom">Contact</Nav.Link>
+            
 
             {/* Show 'Applications' tab only if the user is Admin */}
             {role === "Admin" && (
@@ -44,8 +44,9 @@ const NavbarComponent = () => {
                 Applications
               </Nav.Link>
             )}
+            <Nav.Link as={Link} to="/contact" className="nav-link-custom">Contact</Nav.Link>
           </Nav>
-
+          
           {/* Show personalized greeting */}
           {user ? (
             <div className="user-info">
