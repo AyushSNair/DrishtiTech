@@ -112,10 +112,10 @@ const Auth = () => {
             required
           />
 
-          {/* <select name="role" value={formData.role} onChange={handleChange}>
+          <select name="role" value={formData.role} onChange={handleChange}>
             <option value="Guest">Guest</option>
             <option value="Admin">Admin</option>
-          </select> */}
+          </select>
 
           <button type="submit">{isSignUp ? 'Sign Up' : 'Login'}</button>
         </form>
