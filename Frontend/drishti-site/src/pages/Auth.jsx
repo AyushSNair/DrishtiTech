@@ -36,8 +36,7 @@ const Auth = () => {
         role: formData.role,
         ...(isSignUp && { name: formData.name }),
       };
-
-
+ 
         const response = await fetch(`${process.env.REACT_APP_API_URL}/api/auth/${endpoint}`, {
 
         method: 'POST',
