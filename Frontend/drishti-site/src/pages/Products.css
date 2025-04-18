@@ -1,6 +1,6 @@
 .products-page {
   padding: 2rem;
-  background-color: #002d2d;
+  background-color: #000000;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -12,10 +12,10 @@
 }
 
 .product-section {
-  background-color: #008060;
+  background-color: #f9f9f9;
   padding: 2rem;
   border-radius: 18px;
-  box-shadow: 0 4px 20px rgba(160, 240, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(253, 253, 253, 0.2);
   margin-bottom: 2rem;
   width: 100%;
   max-width: 1000px;
@@ -46,17 +46,17 @@
   width: 100%;
   max-width: 300px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(160, 240, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(14, 14, 14, 0.3);
 }
 
 .product-section h3 {
-  color: #a0f000;
+  color: #000000;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
 
 .product-section p {
-  color: #ffffff;
+  color: #000000;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -68,7 +68,7 @@
 
 .product-section li {
   margin: 0.5rem 0;
-  color: #e0e0e0;
+  color: #000000;
   font-size: 0.95rem;
 }
 
@@ -123,4 +123,22 @@
   .image-content img {
     max-width: 100%;
   }
+}
+.enquire-button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.enquire-button:hover {
+  background-color: #4e4d4b;
+  color: #ffffff;
+  border-color: #000000;
 }

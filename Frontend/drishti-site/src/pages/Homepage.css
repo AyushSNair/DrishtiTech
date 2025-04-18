@@ -1,97 +1,124 @@
 .homepage-container {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  .background-video {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    z-index: -2;
-    filter: brightness(60%);
-    transition: filter 0.5s ease-in-out;
-  }
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(10, 10, 10, 0.7));
+    z-index: 0;
   
-  .overlay-container {
-    position: relative;
-    height: 100%;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 2;
-    padding: 2rem;
-  }
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
   
-  .title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    animation: fadeInDown 1s ease-out;
+}
+
+.logo-img {
+  height: 60px;
+  width: 60px;
+}
+
+.overlay-container {
+  position: relative;
+  height: 200px;
+  color: #fff;
+  z-index: 2;
+  margin-left: 30px;
+  position: absolute;
+  bottom: 0; /* Pushes the heading to the bottom */
+  left: -100%; /* Start off the screen */
+  animation: slide-in-left 1s forwards; /* Trigger animation */
+}
+
+@keyframes slide-in-left {
+  0% {
+      left: -100%; /* Start off the screen */
   }
-  
-  .vision {
-    font-size: 1.25rem;
-    max-width: 800px;
-    margin-bottom: 2rem;
-    color: #e0e0e0;
-    animation: fadeInUp 1s ease-out;
+  100% {
+      left: 0; /* End position */
   }
-  
-  .buttons {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-decoration: none
-  }
-  .cta-button {
-    background-color: #6d8673; /* Green */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-  margin: 10px;
-  border-radius: 5px;
+}
+/* Positioning the logo */
+.logo-container {
+width: auto;
+position: absolute;
+top: 50px; /* Adjust the margin from the top */
+left: 10px;
+margin-left: 0; /* Adjust the margin from the left */
+}
+.logo-img{
+  height: 60px;
+  width: 60px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.vision {
+  font-size: 1.2rem;
+}
+
+.menu-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.dropdown-menu-custom {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-link {
+  color: white;
   text-decoration: none;
-  text-align: center;
-  }
-  
-  .cta-button:hover {
-    background-color: #04c531; /* Darker Green */
-    transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(40, 167, 69, 0.35);
-  }
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
 
+.menu-link:hover {
+  color: #f0a500;
+}
 
-  
-  /* Animations */
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-40px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(40px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+.menu-user-info {
+  margin-top: 10px;
+  color: white;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.logout-button:hover {
+  background-color: #f0a500;
+  color: black;
+}

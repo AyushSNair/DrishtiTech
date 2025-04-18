@@ -1,6 +1,6 @@
 /* Navbar.css */
 .custom-navbar {
-  background-color: #012020;
+  background-color: #000000;
   border: 1px solid #444;
   padding: 0.6rem 1rem;
 }
@@ -21,9 +21,8 @@
 
 .nav-link-custom:hover,
 .nav-link-custom:focus {
-  color: #39FF14 !important; /* Neon green */
+  color: #eeeeee !important; /* Neon green */
   text-decoration: underline;
-  text-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 20px #39FF14;
 }
 
 .search-form {
@@ -42,7 +41,7 @@
   margin-right: 8px;
 }
 .user-info{
-  color: #39FF14;
+  color: #fafffa;
   
 }
 .user-info span{

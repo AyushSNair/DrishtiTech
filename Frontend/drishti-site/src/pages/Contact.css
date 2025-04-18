@@ -1,5 +1,5 @@
 body {
-    background-color: #002d2d;
+    background-color: #191a1a;
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
     padding: 2rem;
     display: flex;
     gap: 3rem;
-    background-color: #008060;
+    background-color: #c8cecd;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     color: #ffffff;
@@ -25,22 +25,22 @@ body {
 
 .contact-info h2 {
     font-size: 2.5rem;
-    color: #93fe5a;
+    color: #000000;
     margin-bottom: 1rem;
 }
 
 .contact-info p {
     margin: 0.75rem 0;
     font-size: 1rem;
-    color: #ffffff;
+    color: #000000;
 }
 
 .contact-info strong {
-    color: #ffffff;
+    color: #000000;
 }
 
 .contact-info a {
-    color: #ffffff;
+    color: #080808;
     text-decoration: none;
 }
 
@@ -62,7 +62,7 @@ body {
 
 .contact-form h3 {
     margin-bottom: 1rem;
-    color: #003c3c;
+    color: #000000;
 }
 
 .contact-form input,
@@ -78,16 +78,16 @@ body {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #a0f000;
+    border-color: #454545;
     outline: none;
-    box-shadow: 0 0 5px #a0f000;
+    box-shadow: 0 0 5px #404040;
 }
 
 .contact-form button {
     padding: 0.9rem;
     font-size: 1.1rem;
     background-color: #000000;
-    color: #a0f000;
+    color: #ffffff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -96,6 +96,6 @@ body {
 }
 
 .contact-form button:hover {
-    background-color: #143c3c;
+    background-color: #464646;
     color: #ffffff;
 }

@@ -12,14 +12,21 @@ const Products = () => {
 
       <div className="product-section">
         <div className="product-content">
-          <div className="text-content">
-            <h3>MAANVI</h3>
-            <p><strong>Motion Artificial Analysis N Visual Inference</strong></p>
+        <div className="text-content">
+            <h3>VISION PRO</h3>
+            <p>Our state of the custom machine learning algorithm which analyzes complete matches & creates custom datasets for each team & each player about their performances based on the following markers:
+
+</p>
             <ul>
-              <li>Custom-built ML model for in-depth match and player analytics.</li>
-              <li>Offers 100% precision for data generation.</li>
-              <li>Designed to be affordable for Tier 1 and grassroots football leagues globally.</li>
+
+             <li>total distance covered
+</li>
+<li>speed & acceleration</li>
+<li>pass accuracy & key passes</li>   
+<li>shots on target & expected goals</li>
+<li>defensive actions</li>  
             </ul>
+            <button className="enquire-button">Enquire Us</button>
           </div>
           <div className="image-content">
             <img src={prod1} alt="MAANVI Product" />
@@ -31,12 +38,18 @@ const Products = () => {
         <div className="product-content">
           <div className="text-content">
             <h3>VISION+</h3>
-            <p>Real-time referee assistance ML model for fast-paced football matches.</p>
+            <p>A custom Machine Learning which is trained on large number of diversified datasets of different scenarios to be able to do the following things:</p>
             <ul>
-              <li>Predicts match-time fouls and goal decisions within 5 seconds.</li>
-              <li>Acts as a live assistant to referees, unlike post-mortem VAR.</li>
-              <li>Aims to ensure fair, unbiased, and accurate officiating in real time.</li>
+
+             <li><b>Real-Time Analysis: </b>
+AI processes player movement, ball dynamics and contact points to identify fouls, potential red cards, penalties, and other crucial moments.
+</li>
+              <li><b>Referee Alerts: </b>
+Alerts and insights are provided to referees via handheld devices or wearable tech for faster decision-making and more accurate calls.
+ </li>
+              
             </ul>
+            <button className="enquire-button">Enquire Us</button>
           </div>
           <div className="image-content">
             <img src={prod2} alt="VISION+ Product" />
