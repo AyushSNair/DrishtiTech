@@ -8,6 +8,7 @@ import bgVideo from '../assets/bg-final-vid.mp4';
 import { FiMenu, FiX } from 'react-icons/fi';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FaMapMarkerAlt, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 const Homepage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -91,6 +92,33 @@ const Homepage = () => {
     </button>
   </div>
 </section>
+<footer className="footer-section">
+      <div className="footer-content">
+
+        <div className="footer-left">
+          <h3>DRISHTI TECH</h3>
+          <p>Empowering the future of AI-driven sports analysis.</p>
+
+          <div className="footer-contact">
+            <p><FaMapMarkerAlt /> Navi Mumbai, India</p>
+            <p><FaEnvelope /> maanvi.tech@example.com</p>
+            <p><FaPhone /> +91 98765 43210</p>
+          </div>
+        </div>
+
+        <div className="footer-links">
+          <a href="/">Home</a>
+          <a href="/products">Products</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+        </div>
+
+        <div className="footer-right">
+          <p>&copy; {new Date().getFullYear()} DRISHTI TECH. All rights reserved.</p>
+        </div>
+
+      </div>
+    </footer>
 
     </>
   );
