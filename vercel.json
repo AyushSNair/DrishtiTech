@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend/package.json",  // This is your frontend (React/Next.js) app
+      "use": "@vercel/static-build"
+    },
+    {
+      "src": "backend/server.js",  // This is your backend (Express) app
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",   // Backend routes
+      "dest": "/backend/server.js"
+    },
+    {
+      "src": "/(.*)",        // Frontend routes
+      "dest": "/frontend/build/$1"
+    }
+  ]
+}
