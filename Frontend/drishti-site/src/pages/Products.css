@@ -142,3 +142,225 @@
   color: #ffffff;
   border-color: #000000;
 }
+
+/* ------------------------- */
+/* Original Styles           */
+/* ------------------------- */
+
+.products-page {
+  padding: 2rem;
+  background-color: #000000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.products-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.product-section {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(253, 253, 253, 0.2);
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-content img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(14, 14, 14, 0.3);
+}
+
+.product-section h3 {
+  color: #000000;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-section p {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.product-section ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.product-section li {
+  margin: 0.5rem 0;
+  color: #000000;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .product-content {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .text-content,
+  .image-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-section h3 {
+    font-size: 1.6rem;
+    font-weight: 900;
+  }
+
+  .product-section p {
+    font-size: 0.95rem;
+  }
+
+  .product-section li {
+    font-size: 1.0rem;
+    text-align: left;
+  }
+
+  .product-section {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-page {
+    padding: 1rem;
+  }
+
+  .products-page h2 {
+    font-size: 2rem;
+  }
+
+  .product-section {
+    display: flex;
+    padding: 1.5rem;
+  }
+
+  .image-content img {
+    max-width: 100%;
+  }
+}
+
+.enquire-button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.enquire-button:hover {
+  background-color: #4e4d4b;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+
+/* ------------------------- */
+/* Pop-up Modal Styles       */
+/* ------------------------- */
+
+/* Overlay background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Make sure the modal is on top */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Close button styling */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #f44336; /* Red on hover */
+}
+
+/* Form input and button styling inside modal */
+.modal-form input {
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-form button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.modal-form button:hover {
+  background-color: #218838;
+}
+
+

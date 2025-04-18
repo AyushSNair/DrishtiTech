@@ -6,6 +6,7 @@ const path = require('path');
 const applicationRoutes = require('./routes/applicationRoutes');
 const contactRoutes = require('./routes/contactRoutes');
 const authRoutes = require('./routes/auth');
+const enquireRoutes = require('./routes/enquire'); // Import the enquire route
 
 require('dotenv').config(); // Add this to read from .env
 
@@ -20,6 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/api/apply', applicationRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/enquire', enquireRoutes);  // Register the enquire route
 
 // Static file serving for uploaded files
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
