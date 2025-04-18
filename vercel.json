@@ -2,21 +2,21 @@
   "version": 2,
   "builds": [
     {
-      "src": "frontend/package.json",  // This is your frontend (React/Next.js) app
+      "src": "frontend/drishti-site/package.json",  
       "use": "@vercel/static-build"
     },
     {
-      "src": "backend/server.js",  // This is your backend (Express) app
+      "src": "backend/server.js",  
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",   // Backend routes
+      "src": "/api/(.*)",   
       "dest": "/backend/server.js"
     },
     {
-      "src": "/(.*)",        // Frontend routes
+      "src": "/(.*)",       
       "dest": "/frontend/build/$1"
     }
   ]
