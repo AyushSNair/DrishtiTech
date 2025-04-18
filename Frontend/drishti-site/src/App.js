@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
-import NavbarComponent from './Components/Navbar';
+// import NavbarComponent from './Components/Navbar';
 import Homepage from './pages/Homepage';
 import About from './pages/AboutUs';
 import SplashScreen from './Components/SplashScreen';
@@ -17,7 +17,7 @@ const AppRoutes = () => {
   const location = useLocation();
 
   // List of routes where the Navbar should not be displayed
-  const noNavbarRoutes = ['/auth'];
+  // const noNavbarRoutes = ['/auth'];
 
   return (
     <>
@@ -25,7 +25,7 @@ const AppRoutes = () => {
       {location.pathname !== '/auth' && <SplashScreen />}
 
       {/* Conditionally render Navbar based on current route */}
-      {!noNavbarRoutes.includes(location.pathname) && <NavbarComponent />}
+      {/* {!noNavbarRoutes.includes(location.pathname) && <NavbarComponent />} */}
 
       <Routes>
         <Route path="/" element={<Homepage />} />
