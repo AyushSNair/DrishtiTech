@@ -41,8 +41,9 @@ const Homepage = () => {
 
         {/* Logo */}
         <Container className='logo'>
-          <img src={logo} alt="Logo" className="d-inline-block align-top logo-img" />
-        </Container>
+  <img src={logo} alt="Logo" className="d-inline-block align-top logo-img" />
+</Container>
+
 
         {/* Menu Button */}
         <div className="menu-button" onClick={toggleMenu}>
