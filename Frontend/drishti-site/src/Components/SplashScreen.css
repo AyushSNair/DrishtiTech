@@ -15,8 +15,11 @@
   .splash-logo {
     width: 150px;
     height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
     animation: zoomIn 1s ease-in-out forwards;
   }
+  
   
   .fade-out {
     opacity: 0;

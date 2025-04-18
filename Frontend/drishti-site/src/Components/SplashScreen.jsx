@@ -21,6 +21,7 @@ const SplashScreen = () => {
   return (
     <div className={`splash-screen ${fadeOut ? 'fade-out' : ''}`}>
       <img src={logo} alt="Splash Logo" className="splash-logo" />
+
     </div>
   );
 };
