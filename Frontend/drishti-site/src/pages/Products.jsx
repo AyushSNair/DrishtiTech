@@ -36,7 +36,7 @@ const Products = () => {
 
     try {
       // Send data to the backend using a POST request
-      const response = await fetch('http://localhost:5000/api/enquire/submit', {
+      const response = await fetch('https://drishtitech-backend.onrender.com/api/enquire/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
