@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './Products.css';
 import prod1 from '../assets/image1.png';  // Assuming the image paths are correct
 import prod2 from '../assets/image21.jpg';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Products = () => {
   const [showModal, setShowModal] = useState(false);
@@ -44,7 +47,19 @@ const Products = () => {
       const result = await response.json();
       if (response.ok) {
         console.log('Form submitted successfully', result);
+        
+
         closeModal();  // Close the modal after submission
+        toast.success('Your request was submitted successfully. We will get back to you soon.', {
+          position: "top-center",
+          autoClose: 3000, // 3 seconds
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        
       } else {
         console.log('Error submitting form:', result.message);
       }
@@ -55,6 +70,7 @@ const Products = () => {
 
   return (
     <div className="products-page">
+      <ToastContainer />
       <h2>Our Products</h2>
 
       {/* Product Section 1 */}
