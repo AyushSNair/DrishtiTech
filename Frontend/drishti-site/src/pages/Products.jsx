@@ -2,8 +2,8 @@ import React from 'react';
 import './Products.css';
 
 // Import images from src/assets
-import prod1 from '../assets/prod12.jpg';
-import prod2 from '../assets/prod2.jpeg';
+import prod1 from '../assets/image1.png';
+import prod2 from '../assets/image21.jpg';
 
 const Products = () => {
   return (
